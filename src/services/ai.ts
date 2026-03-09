@@ -1,10 +1,13 @@
-import { GoogleGenAI } from '@google/genai';
+import { OpenAI } from 'openai';
 
-// Initialize the Gen AI client using API key from environment variable
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+// Initialize client with SumoPod AI
+const openai = new OpenAI({
+    apiKey: process.env.SUMOPOD_API_KEY || 'sk-K-n3xu3FfkSGGHSWLxVbHw',
+    baseURL: 'https://ai.sumopod.com/v1',
+});
 
-// Using the recommended default model
-const MODEL_NAME = 'gemini-2.5-flash';
+// Using the requested model
+const MODEL_NAME = 'seed-2-0-mini';
 
 /**
  * Extracts requirements based on user prompt.
@@ -29,18 +32,17 @@ Format output HARUS raw JSON (tanpa blok markdown), dengan struktur:
 `;
 
     try {
-        const response = await ai.models.generateContent({
+        const response = await openai.chat.completions.create({
             model: MODEL_NAME,
-            contents: [
-                { role: 'system', parts: [{ text: systemPrompt }] },
-                { role: 'user', parts: [{ text: prompt }] },
+            messages: [
+                { role: 'system', content: systemPrompt },
+                { role: 'user', content: prompt }
             ],
-            config: {
-                responseMimeType: 'application/json',
-            }
+            response_format: { type: 'json_object' },
+            temperature: 0.7
         });
 
-        const text = response.text;
+        const text = response.choices[0].message.content;
         if (!text) throw new Error("Kosong dari AI");
 
         return JSON.parse(text);
@@ -69,15 +71,16 @@ Aturan Keras:
 `;
 
     try {
-        const response = await ai.models.generateContent({
+        const response = await openai.chat.completions.create({
             model: MODEL_NAME,
-            contents: [
-                { role: 'system', parts: [{ text: systemPrompt }] },
-                { role: 'user', parts: [{ text: `Tuliskan full source code untuk file: ${filePath}. Berikan respon HANYA TEKS KODENYA SAJA, langsung mulai coding.` }] },
-            ]
+            messages: [
+                { role: 'system', content: systemPrompt },
+                { role: 'user', content: `Tuliskan full source code untuk file: ${filePath}. Berikan respon HANYA TEKS KODENYA SAJA, langsung mulai coding.` },
+            ],
+            temperature: 0.7
         });
 
-        const text = response.text;
+        const text = response.choices[0].message.content;
         if (!text) return "";
 
         // Clean up markdown markers if AI still stubborn

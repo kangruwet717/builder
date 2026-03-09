@@ -595,10 +595,6 @@
     margin-bottom: calc(var(--spacing) * 1);
   }
 
-  .contents {
-    display: contents;
-  }
-
   .flex {
     display: flex;
   }

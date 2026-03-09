@@ -1,540 +1,196 @@
-[00:00:02.407] Server  LOG     ✓ Ready in 1909ms
-[00:06:54.804] Server  LOG       Reload env: .env.local
-[00:07:01.266] Server  LOG       Reload env: .env
-[00:11:33.012] Server  LOG     ○ Compiling / ...
-[00:11:35.541] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:04.017] Server  WARN    API key should be set when using the Gemini API.
-[00:12:04.022] Server  WARN    API key should be set when using the Gemini API.
-[00:12:04.061] Server  LOG     1. Extracting requirements from prompt...
-[00:12:07.728] Server  ERROR   Gagal extract requirements: Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
-[00:12:08.259] Server  ERROR   API Generate Error: Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
-[00:12:08.285] Server  ERROR   (node:12688) MetadataLookupWarning: received unexpected error = All promises were rejected code = UNKNOWN
-(Use `node --trace-warnings ...` to show where the warning was created)
-[00:58:38.046] Server  ERROR   ⨯ ./src/app/page.tsx:4:1
-Module not found: Can't resolve '@/components/ui/button'
-  2 |
-  3 | import { useState } from "react";
-> 4 | import { Button } from "@/components/ui/button";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { Textarea } from "@/components/ui/textarea";
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.048] Server  ERROR   ⨯ ./src/app/page.tsx:4:1
-Module not found: Can't resolve '@/components/ui/button'
-  2 |
-  3 | import { useState } from "react";
-> 4 | import { Button } from "@/components/ui/button";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { Textarea } from "@/components/ui/textarea";
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.050] Server  ERROR   ⨯ ./src/app/page.tsx:4:1
-Module not found: Can't resolve '@/components/ui/button'
-  2 |
-  3 | import { useState } from "react";
-> 4 | import { Button } from "@/components/ui/button";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { Textarea } from "@/components/ui/textarea";
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.052] Server  ERROR   ⨯ ./src/app/page.tsx:4:1
-Module not found: Can't resolve '@/components/ui/button'
-  2 |
-  3 | import { useState } from "react";
-> 4 | import { Button } from "@/components/ui/button";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  5 | import { Textarea } from "@/components/ui/textarea";
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.055] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.057] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.059] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.061] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.064] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.065] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.068] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.070] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.072] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.074] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.076] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.078] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.080] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.082] Server  ERROR   ⨯ ./src/app/page.tsx:6:1
-Module not found: Can't resolve '@/components/ui/card'
-  4 | import { Button } from "@/components/ui/button";
-  5 | import { Textarea } from "@/components/ui/textarea";
-> 6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-  9 | export default function Home() {
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.084] Server  ERROR   ⨯ ./src/app/page.tsx:5:1
-Module not found: Can't resolve '@/components/ui/textarea'
-  3 | import { useState } from "react";
-  4 | import { Button } from "@/components/ui/button";
-> 5 | import { Textarea } from "@/components/ui/textarea";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.086] Server  ERROR   ⨯ ./src/app/page.tsx:5:1
-Module not found: Can't resolve '@/components/ui/textarea'
-  3 | import { useState } from "react";
-  4 | import { Button } from "@/components/ui/button";
-> 5 | import { Textarea } from "@/components/ui/textarea";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.088] Server  ERROR   ⨯ ./src/app/page.tsx:5:1
-Module not found: Can't resolve '@/components/ui/textarea'
-  3 | import { useState } from "react";
-  4 | import { Button } from "@/components/ui/button";
-> 5 | import { Textarea } from "@/components/ui/textarea";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:58:38.090] Server  ERROR   ⨯ ./src/app/page.tsx:5:1
-Module not found: Can't resolve '@/components/ui/textarea'
-  3 | import { useState } from "react";
-  4 | import { Button } from "@/components/ui/button";
-> 5 | import { Textarea } from "@/components/ui/textarea";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-  7 | import { Loader2, Sparkles } from "lucide-react";
-  8 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./src/app/page.tsx [Client Component Browser]
-    ./src/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/page.tsx [Client Component SSR]
-    ./src/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
+[00:00:01.987] Server  LOG     ✓ Ready in 1507ms
+[00:00:38.321] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.321] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+                          >
+                  ...
+
+[00:01:16.460] Server  LOG     1. Extracting requirements from prompt...
+[00:01:31.802] Server  LOG     Requirements Extracted: "booking-bengkel-mobil"
+[00:01:31.803] Server  LOG     2. Generating Core Setup & Database Schema...
+[00:01:40.615] Server  LOG     Generating Page: Landing Page (/)
+[00:01:50.067] Server  LOG     Generating Page: Booking Page (/booking)
+[00:01:50.599] Server  ERROR   Gagal generate code untuk src/app/booking/page.tsx: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:50.600] Server  LOG     Generating Page: Admin Dashboard (/admin)
+[00:01:50.893] Server  ERROR   Gagal generate code untuk src/app/admin/page.tsx: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:50.894] Server  LOG     Generating API: /api/auth/register 
+[00:01:51.083] Server  ERROR   Gagal generate code untuk src/app/api/auth/register/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:51.084] Server  LOG     Generating API: /api/auth/login 
+[00:01:51.337] Server  ERROR   Gagal generate code untuk src/app/api/auth/login/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:51.338] Server  LOG     Generating API: /api/auth/me 
+[00:01:51.573] Server  ERROR   Gagal generate code untuk src/app/api/auth/me/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:51.574] Server  LOG     Generating API: /api/auth/update 
+[00:01:51.776] Server  ERROR   Gagal generate code untuk src/app/api/auth/update/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:51.776] Server  LOG     Generating API: /api/auth/delete 
+[00:01:51.992] Server  ERROR   Gagal generate code untuk src/app/api/auth/delete/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:51.992] Server  LOG     Generating API: /api/bookings 
+[00:01:52.224] Server  ERROR   Gagal generate code untuk src/app/api/bookings/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:52.224] Server  LOG     Generating API: /api/bookings 
+[00:01:52.477] Server  ERROR   Gagal generate code untuk src/app/api/bookings/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:52.477] Server  LOG     Generating API: /api/bookings/:id 
+[00:01:52.707] Server  ERROR   Gagal generate code untuk src/app/api/bookings/:id/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:52.708] Server  LOG     Generating API: /api/bookings/:id 
+[00:01:52.935] Server  ERROR   Gagal generate code untuk src/app/api/bookings/:id/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:52.935] Server  LOG     Generating API: /api/services 
+[00:01:53.164] Server  ERROR   Gagal generate code untuk src/app/api/services/route.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:53.164] Server  LOG     3. Generating Mayar Integration Helper...
+[00:01:53.418] Server  ERROR   Gagal generate code untuk src/lib/mayar.ts: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:53.419] Server  LOG     4. Assembling ZIP file...
+[00:01:54.009] Server  LOG     1. Extracting requirements from prompt...
+[00:01:54.250] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:54.473] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:54.587] Server  LOG     1. Extracting requirements from prompt...
+[00:01:54.815] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:55.066] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:55.113] Server  LOG     1. Extracting requirements from prompt...
+[00:01:55.323] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:55.550] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:55.576] Server  LOG     1. Extracting requirements from prompt...
+[00:01:55.809] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:56.101] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:58.680] Server  LOG     1. Extracting requirements from prompt...
+[00:01:58.924] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:59.184] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:59.288] Server  LOG     1. Extracting requirements from prompt...
+[00:01:59.704] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:01:59.955] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:02:13.415] Server  LOG     1. Extracting requirements from prompt...
+[00:02:13.843] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:02:14.111] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:02:24.460] Server  LOG     1. Extracting requirements from prompt...
+[00:02:24.821] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:02:25.058] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:02:34.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:55.327] Server  LOG     1. Extracting requirements from prompt...
+[00:02:55.759] Server  ERROR   Gagal extract requirements: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:02:56.011] Server  ERROR   API Generate Error: Error: 400 ExceededBudget: User=19c02c0b-0253-41cd-bedd-efb094403522 over budget. Spend=0.00123015, Budget=0.001
+[00:05:52.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:55.015] Server  LOG     1. Extracting requirements from prompt...
+[00:06:13.737] Server  LOG     Requirements Extracted: "b2b-saas-marketplace"
+[00:06:13.738] Server  LOG     2. Generating Core Setup & Database Schema...
+[00:06:32.798] Server  LOG     Generating Page: Landing Page (/)
+[00:07:03.930] Server  LOG     Generating Page: Katalog Produk (/products)
+[00:07:42.254] Server  LOG     Generating Page: Detail Produk (/products/[id])
+[00:08:01.629] Server  LOG     Generating Page: Keranjang Belanja (/cart)
+[00:08:42.442] Server  LOG     Generating Page: Checkout & Pembayaran (/checkout)
+[00:09:10.915] Server  LOG     Generating Page: Admin Dashboard (/admin/dashboard)
+[00:09:45.702] Server  LOG     Generating Page: Vendor Dashboard (/vendor/dashboard)
+[00:09:53.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:17.281] Server  LOG     Generating Page: Login (/login)
+[00:10:21.652] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:29.830] Server  LOG     Generating API: /api/auth/register 
+[00:10:37.794] Server  LOG     1. Extracting requirements from prompt...
+[00:10:38.429] Server  ERROR   Gagal extract requirements: Error: 404 litellm.BadRequestError: OpenAIException - This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?. Received Model Group=whisper-1
+Available Model Group Fallbacks=None
+[00:10:38.526] Server  ERROR   API Generate Error: Error: 404 litellm.BadRequestError: OpenAIException - This is not a chat model and thus not supported in the v1/chat/completions endpoint. Did you mean to use v1/completions?. Received Model Group=whisper-1
+Available Model Group Fallbacks=None
+[00:10:43.370] Server  LOG     Generating API: /api/auth/signin 
+[00:11:11.949] Server  LOG     Generating API: /api/products 
+[00:11:30.915] Server  LOG     Generating API: /api/vendor/products 
+[00:11:38.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:42.547] Server  LOG     1. Extracting requirements from prompt...
+[00:11:52.861] Server  LOG     Generating API: /api/vendor/products/[id] 
+[00:12:16.179] Server  LOG     Generating API: /api/vendor/products/[id] 
+[00:12:35.656] Server  LOG     Generating API: /api/cart 
+[00:12:49.928] Server  LOG     Requirements Extracted: "field-sales-crm"
+[00:12:49.928] Server  LOG     2. Generating Core Setup & Database Schema...
+[00:13:04.923] Server  LOG     Generating API: /api/cart 
+[00:13:29.067] Server  LOG     Generating API: /api/checkout 
+[00:13:29.906] Server  LOG     Generating Page: Landing Page (/)
+[00:13:53.434] Server  LOG     Generating API: /api/admin/vendors 
+[00:14:10.459] Server  LOG     Generating Page: Sales Team Dashboard (/dashboard/sales)
+[00:14:10.779] Server  ERROR   Gagal generate code untuk src/app/dashboard/sales/page.tsx: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:10.780] Server  LOG     Generating Page: Lead Management Portal (/dashboard/leads)
+[00:14:10.997] Server  ERROR   Gagal generate code untuk src/app/dashboard/leads/page.tsx: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:10.998] Server  LOG     Generating Page: Customer Database (/dashboard/customers)
+[00:14:11.136] Server  ERROR   Gagal generate code untuk src/app/dashboard/customers/page.tsx: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:11.136] Server  LOG     Generating Page: Follow-Up Reminders (/dashboard/follow-ups)
+[00:14:11.293] Server  ERROR   Gagal generate code untuk src/app/dashboard/follow-ups/page.tsx: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:11.293] Server  LOG     Generating Page: Admin Dashboard (/dashboard/admin)
+[00:14:11.486] Server  ERROR   Gagal generate code untuk src/app/dashboard/admin/page.tsx: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:11.486] Server  LOG     Generating API: /api/auth/register 
+[00:14:11.627] Server  ERROR   Gagal generate code untuk src/app/api/auth/register/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:11.627] Server  LOG     Generating API: /api/auth/login 
+[00:14:11.805] Server  ERROR   Gagal generate code untuk src/app/api/auth/login/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:11.805] Server  LOG     Generating API: /api/auth/session 
+[00:14:12.059] Server  ERROR   Gagal generate code untuk src/app/api/auth/session/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:12.059] Server  LOG     Generating API: /api/auth/logout 
+[00:14:12.210] Server  ERROR   Gagal generate code untuk src/app/api/auth/logout/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:12.211] Server  LOG     Generating API: /api/leads 
+[00:14:12.435] Server  ERROR   Gagal generate code untuk src/app/api/leads/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:12.436] Server  LOG     Generating API: /api/leads 
+[00:14:12.678] Server  ERROR   Gagal generate code untuk src/app/api/leads/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:12.678] Server  LOG     Generating API: /api/leads/[id] 
+[00:14:12.870] Server  ERROR   Gagal generate code untuk src/app/api/leads/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:12.870] Server  LOG     Generating API: /api/leads/[id] 
+[00:14:13.049] Server  ERROR   Gagal generate code untuk src/app/api/leads/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:13.050] Server  LOG     Generating API: /api/leads/[id] 
+[00:14:13.214] Server  ERROR   Gagal generate code untuk src/app/api/leads/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:13.215] Server  LOG     Generating API: /api/customers 
+[00:14:13.399] Server  ERROR   Gagal generate code untuk src/app/api/customers/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:13.399] Server  LOG     Generating API: /api/customers 
+[00:14:13.531] Server  ERROR   Gagal generate code untuk src/app/api/customers/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:13.532] Server  LOG     Generating API: /api/customers/[id] 
+[00:14:13.730] Server  ERROR   Gagal generate code untuk src/app/api/customers/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:13.731] Server  LOG     Generating API: /api/customers/[id] 
+[00:14:13.905] Server  ERROR   Gagal generate code untuk src/app/api/customers/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:13.906] Server  LOG     Generating API: /api/customers/[id] 
+[00:14:14.033] Server  ERROR   Gagal generate code untuk src/app/api/customers/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:14.033] Server  LOG     Generating API: /api/follow-ups 
+[00:14:14.174] Server  ERROR   Gagal generate code untuk src/app/api/follow-ups/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:14.175] Server  LOG     Generating API: /api/follow-ups 
+[00:14:14.396] Server  ERROR   Gagal generate code untuk src/app/api/follow-ups/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:14.397] Server  LOG     Generating API: /api/follow-ups/[id] 
+[00:14:14.534] Server  ERROR   Gagal generate code untuk src/app/api/follow-ups/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:14.534] Server  LOG     Generating API: /api/follow-ups/[id] 
+[00:14:14.684] Server  ERROR   Gagal generate code untuk src/app/api/follow-ups/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:14.685] Server  LOG     Generating API: /api/admin/analytics 
+[00:14:14.914] Server  ERROR   Gagal generate code untuk src/app/api/admin/analytics/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:14.915] Server  LOG     Generating API: /api/admin/users 
+[00:14:15.053] Server  ERROR   Gagal generate code untuk src/app/api/admin/users/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:15.054] Server  LOG     Generating API: /api/admin/users/[id] 
+[00:14:15.180] Server  ERROR   Gagal generate code untuk src/app/api/admin/users/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:15.180] Server  LOG     Generating API: /api/admin/users/[id] 
+[00:14:15.322] Server  ERROR   Gagal generate code untuk src/app/api/admin/users/[id]/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:15.323] Server  LOG     Generating API: /api/interactions 
+[00:14:15.486] Server  ERROR   Gagal generate code untuk src/app/api/interactions/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:15.486] Server  LOG     Generating API: /api/interactions 
+[00:14:15.619] Server  ERROR   Gagal generate code untuk src/app/api/interactions/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:15.620] Server  LOG     3. Generating Mayar Integration Helper...
+[00:14:15.807] Server  ERROR   Gagal generate code untuk src/lib/mayar.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:15.808] Server  LOG     4. Assembling ZIP file...
+[00:14:18.741] Server  LOG     Generating API: /api/admin/vendors/[id]/approve 
+[00:14:18.893] Server  ERROR   Gagal generate code untuk src/app/api/admin/vendors/[id]/approve/route.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:18.893] Server  LOG     3. Generating Mayar Integration Helper...
+[00:14:19.039] Server  ERROR   Gagal generate code untuk src/lib/mayar.ts: Error: 401 Authentication Error, Invalid proxy server token passed. Received API Key = sk-...iHgw, Key Hash (Token) =a77000fb034750d54802c0d5efbad8e4cb7475f6b65a4b6394266e80ed323132. Unable to find token in cache or `LiteLLM_VerificationTokenTable`
+[00:14:19.040] Server  LOG     4. Assembling ZIP file...
