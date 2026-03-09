@@ -37,8 +37,16 @@ export default function Home() {
       });
 
       if (!response.ok) {
-        const err = await response.json();
-        throw new Error(err.error || "Gagal membuat aplikasi. Coba beberapa saat lagi.");
+        let errMsg = "Gagal membuat aplikasi. Coba beberapa saat lagi.";
+        try {
+          const err = await response.json();
+          if (err.error) errMsg = err.error;
+        } catch (e) {
+          if (response.status === 504 || response.status === 500) {
+            errMsg = `Waktu generasi habis (Timeout atau Error ${response.status}). Vercel membatasi durasi.`;
+          }
+        }
+        throw new Error(errMsg);
       }
 
       // Handle file download

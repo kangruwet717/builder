@@ -19,19 +19,19 @@ export async function POST(req: Request) {
     // List of files we need to let AI generate
     const generatedFiles: { path: string, content: string }[] = [];
 
-    // 1. Generate Global Configs & DB Schema
-    console.log("2. Generating Core Setup & Database Schema...");
-    const dbCode = await generateSourceCode(
+    console.log("2. Generating Core Setup, Pages, APIs, and Helpers in parallel...");
+
+    // 1. Generate DB Schema
+    const dbPromise = generateSourceCode(
       `src/db/schema.ts`,
       "Database Schema (MySQL)",
       requirements
-    );
-    if (dbCode) generatedFiles.push({ path: `src/db/schema.ts`, content: dbCode });
+    ).then(code => code ? { path: `src/db/schema.ts`, content: code } : null);
 
     // 2. Generate Pages
-    for (const page of requirements.pages || []) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const pagePromises = (requirements.pages || []).map(async (page: any) => {
       console.log(`Generating Page: ${page.name} (${page.path})`);
-
       let filePath = `src/app${page.path}/page.tsx`;
       if (page.path === "/") filePath = "src/app/page.tsx";
 
@@ -41,13 +41,13 @@ export async function POST(req: Request) {
         { ...requirements, contextPage: page }
       );
 
-      if (code) generatedFiles.push({ path: filePath, content: code });
-    }
+      return code ? { path: filePath, content: code } : null;
+    });
 
     // 3. Generate API Endpoints
-    for (const api of requirements.apiEndpoints || []) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const apiPromises = (requirements.apiEndpoints || []).map(async (api: any) => {
       console.log(`Generating API: ${api.path} `);
-
       let pathRoute = api.path;
       if (pathRoute.startsWith('/api/')) {
         pathRoute = pathRoute.replace('/api/', '');
@@ -61,17 +61,22 @@ export async function POST(req: Request) {
         { ...requirements, contextApi: api }
       );
 
-      if (code) generatedFiles.push({ path: filePath, content: code });
-    }
+      return code ? { path: filePath, content: code } : null;
+    });
 
-    // 4. Generate Mayar API Service (Template Helper)
-    console.log("3. Generating Mayar Integration Helper...");
-    const mayarHelperCode = await generateSourceCode(
+    // 4. Generate Mayar API Service
+    const mayarPromise = generateSourceCode(
       "src/lib/mayar.ts",
       "Utility function untuk integrasi Mayar payment gateway secara native HTTP API",
       requirements
-    );
-    if (mayarHelperCode) generatedFiles.push({ path: "src/lib/mayar.ts", content: mayarHelperCode });
+    ).then(code => code ? { path: "src/lib/mayar.ts", content: code } : null);
+
+    // Wait for all to finish
+    const results = await Promise.all([dbPromise, ...pagePromises, ...apiPromises, mayarPromise]);
+
+    results.forEach(res => {
+      if (res) generatedFiles.push(res);
+    });
 
 
     // Create Zip
